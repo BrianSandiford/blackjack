@@ -22,15 +22,15 @@ def build_deck_cards(list_rank, suit, face_up, value):
     for x in range(13):
         list_cards.append(Cards(list_rank[x], suit, face_up, list_value[x]))
 
-
+#shuffle deck
 def shuffle_deck(list_cards):
     random.shuffle(list_cards)
 
-
+#deal deck
 def deal(list_cards, hand):
     hand.append(list_cards.pop(0))
 
-
+#sums both players and dealers card
 def sum_of_cards(hand):
     sum = 0
     for x in range(len(hand)):
