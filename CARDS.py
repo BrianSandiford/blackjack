@@ -37,7 +37,7 @@ def sum_of_cards(hand):
         sum = sum + hand[x].value
     return sum
 
-
+#show hand of player
 def show_players_hand(players_hand):
     print('\nPlayer has:')
     for x in players_hand:
